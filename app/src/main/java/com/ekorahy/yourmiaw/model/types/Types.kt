@@ -1,11 +1,10 @@
-package com.ekorahy.yourmiaw
+package com.ekorahy.yourmiaw.model.types
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
 
 @Parcelize
-data class Popular(
+data class Types(
     val name: String,
-    val photo: Int,
-    val rating: Double
+    val photo: Int
 ): Parcelable

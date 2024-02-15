@@ -1,4 +1,4 @@
-package com.ekorahy.yourmiaw
+package com.ekorahy.yourmiaw.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,25 +6,27 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.ekorahy.yourmiaw.model.cat.Cat
+import com.ekorahy.yourmiaw.R
 
-class ListPopularAdapter(private val listPopular: ArrayList<Popular>) :
-    RecyclerView.Adapter<ListPopularAdapter.ListViewHolder>() {
+class ListRecommendedAdapter(private val listRecommended: ArrayList<Cat>) :
+    RecyclerView.Adapter<ListRecommendedAdapter.ListViewHolder>() {
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
     ): ListViewHolder {
-        val view: View = LayoutInflater.from(parent.context).inflate(R.layout.item_popular, parent, false)
+        val view: View = LayoutInflater.from(parent.context).inflate(R.layout.item_cat, parent, false)
         return ListViewHolder(view)
     }
 
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
-        val (name, photo, rating) = listPopular[position]
+        val (name, photo, rating) = listRecommended[position]
         holder.tvName.text = name
         holder.ivPhoto.setImageResource(photo)
         holder.tvRating.text = rating.toString()
     }
 
-    override fun getItemCount(): Int = listPopular.size
+    override fun getItemCount(): Int = listRecommended.size
 
     class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val ivPhoto: ImageView = itemView.findViewById(R.id.iv_photo)

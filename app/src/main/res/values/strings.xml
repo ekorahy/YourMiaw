@@ -73,5 +73,71 @@
         <item>4.6</item>
         <item>4.6</item>
     </string-array>
+
     <!-- recommended -->
+    <string-array name="recommended_name">
+        <item>Whiskers</item>
+        <item>Luna</item>
+        <item>Simba</item>
+        <item>Bella</item>
+        <item>Milna</item>
+        <item>Shadow</item>
+        <item>Ginger</item>
+        <item>Oreo</item>
+        <item>Cleo</item>
+        <item>Max</item>
+        <item>Nala</item>
+        <item>Felix</item>
+        <item>Daisy</item>
+        <item>Charlie</item>
+        <item>Socks</item>
+        <item>Tiger</item>
+        <item>Chloe</item>
+        <item>Boots</item>
+        <item>Oliver</item>
+    </string-array>
+
+    <string-array name="recommended_photo">
+        <item>@drawable/cat_1_whiskers</item>
+        <item>@drawable/cat_2_luna</item>
+        <item>@drawable/cat_3_simba</item>
+        <item>@drawable/cat_4_bella</item>
+        <item>@drawable/cat_5_milna</item>
+        <item>@drawable/cat_6_shadow</item>
+        <item>@drawable/cat_7_ginger</item>
+        <item>@drawable/cat_8_oreo</item>
+        <item>@drawable/cat_9_cleo</item>
+        <item>@drawable/cat_10_max</item>
+        <item>@drawable/cat_11_nala</item>
+        <item>@drawable/cat_12_felix</item>
+        <item>@drawable/cat_13_daisy</item>
+        <item>@drawable/cat_14_charlie</item>
+        <item>@drawable/cat_15_socks</item>
+        <item>@drawable/cat_16_tiger</item>
+        <item>@drawable/cat_17_chloe</item>
+        <item>@drawable/cat_18_boots</item>
+        <item>@drawable/cat_19_oliver</item>
+    </string-array>
+
+    <string-array name="recommended_rating">
+        <item>4.2</item>
+        <item>4.4</item>
+        <item>4.3</item>
+        <item>4.1</item>
+        <item>4.5</item>
+        <item>4.0</item>
+        <item>4.3</item>
+        <item>4.2</item>
+        <item>4.4</item>
+        <item>4.1</item>
+        <item>4.5</item>
+        <item>4.2</item>
+        <item>4.3</item>
+        <item>4.4</item>
+        <item>4.1</item>
+        <item>4.5</item>
+        <item>4.2</item>
+        <item>4.3</item>
+        <item>4.4</item>
+    </string-array>
 </resources>
