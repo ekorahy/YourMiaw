@@ -36,8 +36,9 @@
             <ImageButton
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:padding="60dp"
                 android:background="?android:selectableItemBackground"
-                android:src="@drawable/ic_notification" />
+                android:src="@drawable/ic_profile" />
         </LinearLayout>
 
         <ImageView

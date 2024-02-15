@@ -73,10 +73,11 @@ class MainActivity : AppCompatActivity() {
     private fun getListTypes(): ArrayList<Types> {
         val typesName = resources.getStringArray(R.array.types_name)
         val typesPhoto = resources.obtainTypedArray(R.array.types_photo)
+        val typesDesc = resources.getStringArray(R.array.types_desc)
         val listTypes = ArrayList<Types>()
 
         for (i in typesName.indices) {
-            val types = Types(typesName[i], typesPhoto.getResourceId(i, -1))
+            val types = Types(typesName[i], typesPhoto.getResourceId(i, -1), typesDesc[i])
             listTypes.add(types)
         }
         return listTypes

@@ -7,11 +7,15 @@
     <string name="view_all">View all</string>
     <string name="placeholder_name">Beluga</string>
     <string name="placeholder_rating">5</string>
-
+    <string name="placeholder_name_category">Village Cat</string>
+    <string name="placeholder_desc_category">Village cats are a type of pet cat in Indonesia that is very easy to find. Usually these cats live wild or free around human settlements. This type of cat can have a variety of coat colors and diverse physical characteristics. They are usually allowed to roam freely around the neighborhood and rely on food from trash, hunting, or human food scraps. There are also domestic cats that are pets. The advantage of keeping a mongrel cat is that it does not require special care so you don\'t have to bother with a lot of preparation.</string>
+    <string name="detail_category">Detail Category</string>
+    <string name="source">Source: https://hellosehat.com/sehat/informasi-kesehatan/jenis-kucing-peliharaan/</string>
+    <string name="share">Share</string>
 
     <!-- types -->
     <string-array name="types_name">
-        <item>Village</item>
+        <item>Village Cat</item>
         <item>Persian</item>
         <item>British Shorthair</item>
         <item>Ragdoll</item>
@@ -32,6 +36,18 @@
         <item>@drawable/cat_7_munchkin</item>
         <item>@drawable/cat_8_maine_coon</item>
         <item>@drawable/cat_9_bengal</item>
+    </string-array>
+
+    <string-array name="types_desc">
+        <item>Village cats are a type of pet cat in Indonesia that is very easy to find. Usually these cats live wild or free around human settlements. This type of cat can have a variety of coat colors and diverse physical characteristics. They are usually allowed to roam freely around the neighborhood and rely on food from trash, hunting, or human food scraps. There are also domestic cats that are pets. The advantage of keeping a mongrel cat is that it does not require special care so you don\'t have to bother with a lot of preparation.</item>
+        <item>The next popular breed of cat to be a pet is the Persian cat. Its flat face and long fur make this cat much loved by people. Despite being a long-haired cat breed, Persian cats do not require much special care. However, because of their long fur, you should regularly comb their hair to avoid tangles and fleas on their bodies.With its graceful appearance, Persian cats are very fond of being cuddled and sleeping on their owner\'s lap.</item>
+        <item>Another popular cat breed is the British Shorthair. It has the characteristics of a gray coat color, thick and short carpet-like fur, large round eyes, and medium-colored size. Unlike the general breed of cats, British Shorthairs are said to be calm and quiet animals.They usually bond easily with their owners, are affectionate and adaptable. Unfortunately, they are not very fond of being carried. British Shorthairs get along well with all kinds of animals, such as cats, rabbits, and birds. This is perfect for those of you who like to keep more than one type of animal to care for.</item>
+        <item>Want a cat that follows you everywhere, warmly welcomes you home, or a cat you can sleep with? Choose the Ragdoll cat breed. These cats have long, brightly colored fur and blue eyes. With this elegant appearance they are very clingy and prefer to play with humans rather than fellow cats. Ragdolls are also kind, obedient, cooperative and can play with children.</item>
+        <item>Quoted from The Cat Fanciers\' Association, Scottish Fold is a breed of cat originating from Scotland. Scottish Fold has unique features, namely ears that fold forward due to genetic mutations. It has a round face with soft, thick fur and large eyes. At first glance, this cat looks like a teddy bear. With a sweet expression, this cat breed is adaptable and easily shows affection to its owner. These cats are also quite calm and do not panic easily when in a new environment or there are strangers in the house. Scottish Fold does not need much care. Just provide nutritious food and abundant affection so that he grows healthy and happy.</item>
+        <item>Sphynx cats are the most unique of all cats because they have no fur. This cat has a genetic mutation that has occurred for a long time. This cat is named Sphynx because it is similar to Sphynx, one of the statues in Egypt. Besides having no fur, other physical characteristics are its lemon-shaped eyes, large ears, and many body folds. Its character is very calm, ignorant, and very quiet. Because it is hairless, this cat has special care in that you must often wipe its skin regularly.</item>
+        <item>Munchkin cats are cat models that have unique physical characteristics, namely short legs or legs that are shorter than the average cat. Even so, this type of cat is very fast and agile in moving. He is very active running around the house as well as being able to sneak into tight corners because of his cute body. Munchkins are affectionate cats. They are not reluctant to show affection to their owners, such as asking to be petted or sleeping on their owners\' laps. This breed of cat is also generally adaptable and sociable with strangers. Although sometimes showing fear, over time he will easily play with humans he has just met.</item>
+        <item>If you\'re meeting a Maine Coon cat for the first time, you might be a bit surprised by its size. Maine Coons are referred to as \'giant cats\'. This is because they are bigger, taller and stronger than the average cat. The cat\'s fur is very dense with a pointed chin and ears. Despite its large size, the maine coon is a cat with a lively, sweet and very friendly character. This cat is also very easy to get along with humans and other animals.</item>
+        <item>The Bengal cat breed is in high demand due to the leopard-like pattern on its fur. This striped pattern is one of the breed\'s main characteristics. Bengal coat colors can vary, including tan or snow white with black stripe patterns, In addition, they are very active, curious and playful. Bengal cats are very adaptable and loyal to their owners. It is also not reluctant to show affection to its owner, such as asking to be petted, sleeping on the lap, or asking to be invited to play.</item>
     </string-array>
 
     <!-- popular -->
