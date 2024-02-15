@@ -1,3 +1,77 @@
 <resources>
     <string name="app_name">YourMiaw</string>
+    <string name="category">Category</string>
+    <string name="popular">Popular</string>
+    <string name="recommended">Recommended</string>
+    <string name="types_name">Village</string>
+    <string name="view_all">View all</string>
+    <string name="placeholder_name">Beluga</string>
+    <string name="placeholder_rating">5</string>
+
+
+    <!-- types -->
+    <string-array name="types_name">
+        <item>Village</item>
+        <item>Persian</item>
+        <item>British Shorthair</item>
+        <item>Ragdoll</item>
+        <item>Scottish Fold</item>
+        <item>Sphynk</item>
+        <item>Munchkin</item>
+        <item>Maine Coon</item>
+        <item>Bengal</item>
+    </string-array>
+
+    <string-array name="types_photo">
+        <item>@drawable/cat_1_village</item>
+        <item>@drawable/cat_2_persian</item>
+        <item>@drawable/cat_3_british_shorthair</item>
+        <item>@drawable/cat_4_ragdoll</item>
+        <item>@drawable/cat_5_scottish_fold</item>
+        <item>@drawable/cat_6_sphynk</item>
+        <item>@drawable/cat_7_munchkin</item>
+        <item>@drawable/cat_8_maine_coon</item>
+        <item>@drawable/cat_9_bengal</item>
+    </string-array>
+
+    <!-- popular -->
+    <string-array name="popular_name">
+        <item>Beluga</item>
+        <item>Beluga Jr.</item>
+        <item>Sumbul</item>
+        <item>Shisha</item>
+        <item>Oyen</item>
+        <item>Rico</item>
+        <item>Gembul</item>
+        <item>Monis</item>
+        <item>Kanabawi</item>
+        <item>Aing Macan</item>
+    </string-array>
+
+    <string-array name="popular_photo">
+        <item>@drawable/cat_1_beluga</item>
+        <item>@drawable/cat_2_beluga_jr</item>
+        <item>@drawable/cat_3_sumbul</item>
+        <item>@drawable/cat_4_shisha</item>
+        <item>@drawable/cat_5_oyen</item>
+        <item>@drawable/cat_6_rico</item>
+        <item>@drawable/cat_7_gembul</item>
+        <item>@drawable/cat_8_monis</item>
+        <item>@drawable/cat_9_kanabawi</item>
+        <item>@drawable/cat_10_aing_macan</item>
+    </string-array>
+
+    <string-array name="popular_rating">
+        <item>5</item>
+        <item>5</item>
+        <item>4.9</item>
+        <item>4.8</item>
+        <item>4.7</item>
+        <item>4.7</item>
+        <item>4.7</item>
+        <item>4.6</item>
+        <item>4.6</item>
+        <item>4.6</item>
+    </string-array>
+    <!-- recommended -->
 </resources>

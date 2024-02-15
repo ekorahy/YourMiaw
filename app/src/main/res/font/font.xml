@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--Pacifico -->
+    <font android:font="@font/pacifico_regular" />
+
+    <!-- Open Sans -->
+    <font android:font="@font/opensans_bold" />
+    <font android:font="@font/opensans_medium" />
+    <font android:font="@font/opensans_regular" />
+    <font android:font="@font/opensans_light" />
+
+    <!-- Poppins -->
+    <font android:font="@font/poppins_medium" />
+    <font android:font="@font/poppins_extralight" />
+    <font android:font="@font/poppins_light" />
+</font-family>
