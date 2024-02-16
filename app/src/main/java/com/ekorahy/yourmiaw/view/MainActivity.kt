@@ -1,6 +1,7 @@
 package com.ekorahy.yourmiaw.view
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -13,6 +14,7 @@ import com.ekorahy.yourmiaw.adapter.ListRecommendedAdapter
 import com.ekorahy.yourmiaw.adapter.ListAllMiawAdapter
 import com.ekorahy.yourmiaw.adapter.ListTypesAdapter
 import com.ekorahy.yourmiaw.databinding.ActivityMainBinding
+import com.ekorahy.yourmiaw.view.detail.about.AboutActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -29,6 +31,10 @@ class MainActivity : AppCompatActivity() {
         binding.rvTypes.setHasFixedSize(true)
         binding.rvPopular.setHasFixedSize(true)
         binding.rvRecommended.setHasFixedSize(true)
+        binding.aboutPage.setOnClickListener {
+            val intent = Intent(this@MainActivity, AboutActivity::class.java)
+            startActivity(intent)
+        }
 
         listTypes.addAll(getListTypes())
         listRecommended.addAll(getListRecommended())

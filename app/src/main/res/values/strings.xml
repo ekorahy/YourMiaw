@@ -19,6 +19,9 @@
     <string name="share_via">Share via</string>
     <string name="share_content_category">Name: %s\nDescription: %s"</string>
     <string name="share_content_cat">Name: %s\nPrice: %s\nCategory: %s\nDescription: %s"</string>
+    <string name="about_developer">About Developer</string>
+    <string name="profile_name">Eko Rahayu Widodo</string>
+    <string name="profile_email">ekowidodo073@gmail.com</string>
 
     <!-- types -->
     <string-array name="types_name">
