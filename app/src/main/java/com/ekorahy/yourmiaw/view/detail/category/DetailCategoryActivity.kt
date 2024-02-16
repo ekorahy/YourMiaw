@@ -1,8 +1,10 @@
 package com.ekorahy.yourmiaw.view.detail.category
 
+import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.ekorahy.yourmiaw.R
 import com.ekorahy.yourmiaw.databinding.ActivityDetailCategoryBinding
 import com.ekorahy.yourmiaw.model.types.Types
 
@@ -22,9 +24,22 @@ class DetailCategoryActivity : AppCompatActivity() {
         }
 
         if (category != null) {
-            binding.ivPhoto.setImageResource(category.photo)
-            binding.tvName.text = category.name
-            binding.tvDesc.text = category.desc
+            with(binding) {
+                ivPhoto.setImageResource(category.photo)
+                tvName.text = category.name
+                tvDesc.text = category.desc
+                btnBack.setOnClickListener {
+                    onBackPressedDispatcher.onBackPressed()
+                }
+                btnShare.setOnClickListener {
+                    val shareIntent = Intent().apply {
+                        action = Intent.ACTION_SEND
+                        type = "text/plain"
+                        putExtra(Intent.EXTRA_TEXT, getString(R.string.share_content_category, category.name, category.desc))
+                    }
+                    startActivity(Intent.createChooser(shareIntent, getString(R.string.share_via)))
+                }
+            }
         }
     }
 

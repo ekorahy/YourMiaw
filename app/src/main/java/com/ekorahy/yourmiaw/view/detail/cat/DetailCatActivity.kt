@@ -1,8 +1,11 @@
 package com.ekorahy.yourmiaw.view.detail.cat
 
+import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
+import com.ekorahy.yourmiaw.R
 import com.ekorahy.yourmiaw.databinding.ActivityDetailCatBinding
 import com.ekorahy.yourmiaw.model.cat.Cat
 
@@ -22,11 +25,40 @@ class DetailCatActivity : AppCompatActivity() {
         }
 
         if (cat != null) {
-            binding.ivPhoto.setImageResource(cat.photo)
-            binding.tvName.text = cat.name
-            binding.tvPrice.text = cat.price.toString()
-            binding.tvCategory.text = cat.category
-            binding.tvDesc.text = cat.desc
+            with(binding) {
+                ivPhoto.setImageResource(cat.photo)
+                tvName.text = cat.name
+                tvPrice.text = cat.price.toString()
+                tvCategory.text = cat.category
+                tvDesc.text = cat.desc
+                btnBack.setOnClickListener {
+                    onBackPressedDispatcher.onBackPressed()
+                }
+                btnBuy.setOnClickListener {
+                    Toast.makeText(
+                        this@DetailCatActivity,
+                        getString(R.string.toast_buy, cat.name),
+                        Toast.LENGTH_SHORT
+                    ).show()
+                }
+                btnShare.setOnClickListener {
+                    val shareIntent = Intent().apply {
+                        action = Intent.ACTION_SEND
+                        type = "text/plain"
+                        putExtra(
+                            Intent.EXTRA_TEXT,
+                            getString(
+                                R.string.share_content_cat,
+                                cat.name,
+                                cat.price.toString(),
+                                cat.category,
+                                cat.desc
+                            )
+                        )
+                    }
+                    startActivity(Intent.createChooser(shareIntent, getString(R.string.share_via)))
+                }
+            }
         }
     }
 

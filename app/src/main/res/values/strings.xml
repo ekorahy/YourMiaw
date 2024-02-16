@@ -15,6 +15,10 @@
     <string name="placeholder_search" tools:ignore="TypographyEllipsis">village cat ...</string>
     <string name="detail_miaw">Detail Miaw</string>
     <string name="buy_now">Buy Now</string>
+    <string name="toast_buy">You have successfully bought this %s miaw.</string>
+    <string name="share_via">Share via</string>
+    <string name="share_content_category">Name: %s\nDescription: %s"</string>
+    <string name="share_content_cat">Name: %s\nPrice: %s\nCategory: %s\nDescription: %s"</string>
 
     <!-- types -->
     <string-array name="types_name">
