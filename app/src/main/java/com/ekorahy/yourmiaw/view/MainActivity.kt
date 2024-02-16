@@ -9,8 +9,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.ekorahy.yourmiaw.model.cat.Cat
 import com.ekorahy.yourmiaw.R
 import com.ekorahy.yourmiaw.model.types.Types
-import com.ekorahy.yourmiaw.adapter.ListPopularAdapter
 import com.ekorahy.yourmiaw.adapter.ListRecommendedAdapter
+import com.ekorahy.yourmiaw.adapter.ListAllMiawAdapter
 import com.ekorahy.yourmiaw.adapter.ListTypesAdapter
 import com.ekorahy.yourmiaw.databinding.ActivityMainBinding
 
@@ -18,8 +18,8 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
     private val listTypes = ArrayList<Types>()
-    private val listPopular = ArrayList<Cat>()
     private val listRecommended = ArrayList<Cat>()
+    private val listAllMiaw = ArrayList<Cat>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,8 +31,8 @@ class MainActivity : AppCompatActivity() {
         binding.rvRecommended.setHasFixedSize(true)
 
         listTypes.addAll(getListTypes())
-        listPopular.addAll(getListPopular())
         listRecommended.addAll(getListRecommended())
+        listAllMiaw.addAll(getListAllMiaw())
 
         if (applicationContext.resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE) {
             binding.cvBanner.layoutParams.height = 500
@@ -42,31 +42,48 @@ class MainActivity : AppCompatActivity() {
     }
 
     @SuppressLint("Recycle")
-    private fun getListRecommended(): ArrayList<Cat> {
-        val recommendedName = resources.getStringArray(R.array.recommended_name)
-        val recommendedPhoto = resources.obtainTypedArray(R.array.recommended_photo)
-        val recommendedRating = resources.getStringArray(R.array.recommended_rating)
-        val listRecommended = ArrayList<Cat>()
+    private fun getListAllMiaw(): ArrayList<Cat> {
+        val miawName = resources.getStringArray(R.array.all_miaw_name)
+        val miawPhoto = resources.obtainTypedArray(R.array.all_miaw_photo)
+        val miawPrice = resources.getStringArray(R.array.all_miaw_price)
+        val miawCategory = resources.getStringArray(R.array.all_miaw_category)
+        val miawDesc = resources.getStringArray(R.array.all_miaw_desc)
+        val listAllMiau = ArrayList<Cat>()
 
-        for (i in recommendedName.indices) {
-            val recommended = Cat(recommendedName[i], recommendedPhoto.getResourceId(i, -1), recommendedRating[i].toDouble())
-            listRecommended.add(recommended)
+        for (i in miawName.indices) {
+            val miaw = Cat(
+                miawName[i],
+                miawPhoto.getResourceId(i, -1),
+                miawPrice[i].toDouble(),
+                miawCategory[i],
+                miawDesc[i]
+            )
+            listAllMiau.add(miaw)
         }
-        return listRecommended
+        return listAllMiau
     }
 
     @SuppressLint("Recycle")
-    private fun getListPopular(): ArrayList<Cat> {
-        val popularName = resources.getStringArray(R.array.popular_name)
-        val popularPhoto = resources.obtainTypedArray(R.array.popular_photo)
-        val popularRating = resources.getStringArray(R.array.popular_rating)
-        val listPopular = ArrayList<Cat>()
+    private fun getListRecommended(): ArrayList<Cat> {
+        val recommendedName = resources.getStringArray(R.array.recommended_name)
+        val recommendedPhoto = resources.obtainTypedArray(R.array.recommended_photo)
+        val recommendedPrice = resources.getStringArray(R.array.recommended_price)
+        val recommendedCategory = resources.getStringArray(R.array.recommended_category)
+        val recommendedDesc = resources.getStringArray(R.array.recommended_desc)
+        val listRecommended = ArrayList<Cat>()
 
-        for (i in popularName.indices) {
-            val popular = Cat(popularName[i], popularPhoto.getResourceId(i, -1), popularRating[i].toDouble())
-            listPopular.add(popular)
+        for (i in recommendedName.indices) {
+            val recommended =
+                Cat(
+                    recommendedName[i],
+                    recommendedPhoto.getResourceId(i, -1),
+                    recommendedPrice[i].toDouble(),
+                    recommendedCategory[i],
+                    recommendedDesc[i]
+                )
+            listRecommended.add(recommended)
         }
-        return listPopular
+        return listRecommended
     }
 
     @SuppressLint("Recycle")
@@ -84,13 +101,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showList() {
-        binding.rvTypes.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+        binding.rvTypes.layoutManager =
+            LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
         val listTypesAdapter = ListTypesAdapter(listTypes)
         binding.rvTypes.adapter = listTypesAdapter
 
-        binding.rvPopular.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
-        val listPopularAdapter = ListPopularAdapter(listPopular)
-        binding.rvPopular.adapter = listPopularAdapter
+        binding.rvPopular.layoutManager =
+            LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+        val listRecommendedAdapter = ListRecommendedAdapter(listRecommended)
+        binding.rvPopular.adapter = listRecommendedAdapter
 
         if (applicationContext.resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE) {
             binding.rvRecommended.layoutManager = GridLayoutManager(this, 4)
@@ -98,7 +117,7 @@ class MainActivity : AppCompatActivity() {
             binding.rvRecommended.layoutManager = GridLayoutManager(this, 2)
         }
 
-        val listRecommendedAdapter = ListRecommendedAdapter(listRecommended)
-        binding.rvRecommended.adapter = listRecommendedAdapter
+        val listAllMiawAdapter = ListAllMiawAdapter(listAllMiaw)
+        binding.rvRecommended.adapter = listAllMiawAdapter
     }
 }

@@ -1,17 +1,20 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">YourMiaw</string>
-    <string name="category">Category</string>
-    <string name="popular">Popular</string>
+    <string name="categories">Categories</string>
+    <string name="all_miaw">All Miaw</string>
     <string name="recommended">Recommended</string>
     <string name="types_name">Village</string>
-    <string name="view_all">View all</string>
     <string name="placeholder_name">Beluga</string>
-    <string name="placeholder_rating">5</string>
+    <string name="placeholder_rating">45.6</string>
     <string name="placeholder_name_category">Village Cat</string>
     <string name="placeholder_desc_category">Village cats are a type of pet cat in Indonesia that is very easy to find. Usually these cats live wild or free around human settlements. This type of cat can have a variety of coat colors and diverse physical characteristics. They are usually allowed to roam freely around the neighborhood and rely on food from trash, hunting, or human food scraps. There are also domestic cats that are pets. The advantage of keeping a mongrel cat is that it does not require special care so you don\'t have to bother with a lot of preparation.</string>
+    <string name="placeholder_desc_cat">Beluga is a very friendly and affectionate cat. She enjoys playing with her owner and always gives warmth with her gentle hugs. Beluga is also intelligent and quick to learn basic commands. Her soft and white fur makes her look like a ballerina on the carpet.</string>
     <string name="detail_category">Detail Category</string>
     <string name="source">Source: https://hellosehat.com/sehat/informasi-kesehatan/jenis-kucing-peliharaan/</string>
     <string name="share">Share</string>
+    <string name="placeholder_search" tools:ignore="TypographyEllipsis">village cat ...</string>
+    <string name="detail_miaw">Detail Miaw</string>
+    <string name="buy_now">Buy Now</string>
 
     <!-- types -->
     <string-array name="types_name">
@@ -50,8 +53,8 @@
         <item>The Bengal cat breed is in high demand due to the leopard-like pattern on its fur. This striped pattern is one of the breed\'s main characteristics. Bengal coat colors can vary, including tan or snow white with black stripe patterns, In addition, they are very active, curious and playful. Bengal cats are very adaptable and loyal to their owners. It is also not reluctant to show affection to its owner, such as asking to be petted, sleeping on the lap, or asking to be invited to play.</item>
     </string-array>
 
-    <!-- popular -->
-    <string-array name="popular_name">
+    <!-- recommended -->
+    <string-array name="recommended_name">
         <item>Beluga</item>
         <item>Beluga Jr.</item>
         <item>Sumbul</item>
@@ -64,7 +67,7 @@
         <item>Aing Macan</item>
     </string-array>
 
-    <string-array name="popular_photo">
+    <string-array name="recommended_photo">
         <item>@drawable/cat_1_beluga</item>
         <item>@drawable/cat_2_beluga_jr</item>
         <item>@drawable/cat_3_sumbul</item>
@@ -77,21 +80,47 @@
         <item>@drawable/cat_10_aing_macan</item>
     </string-array>
 
-    <string-array name="popular_rating">
-        <item>5</item>
-        <item>5</item>
-        <item>4.9</item>
-        <item>4.8</item>
-        <item>4.7</item>
-        <item>4.7</item>
-        <item>4.7</item>
-        <item>4.6</item>
-        <item>4.6</item>
-        <item>4.6</item>
+    <string-array name="recommended_price">
+        <item>35.2</item>
+        <item>25.1</item>
+        <item>14.9</item>
+        <item>24.8</item>
+        <item>34.7</item>
+        <item>24.7</item>
+        <item>24.6</item>
+        <item>24.6</item>
+        <item>14.5</item>
+        <item>34.4</item>
     </string-array>
 
-    <!-- recommended -->
-    <string-array name="recommended_name">
+    <string-array name="recommended_desc">
+        <item>Beluga is a very friendly and affectionate cat. She enjoys playing with her owner and always gives warmth with her gentle hugs. Beluga is also intelligent and quick to learn basic commands. Her soft and white fur makes her look like a ballerina on the carpet.</item>
+        <item>Beluga Jr. is the younger version of Beluga, full of energy. He is always excited to explore his surroundings and play with his favorite toys. Although still young, Beluga Jr. has a cheerful personality and is full of love.</item>
+        <item>Sumbul is a gray-colored cat with beautiful green eyes. She is a graceful and calm cat, often sitting by the window to enjoy the outside view. Although appearing quiet, Sumbul is very affectionate with her owner and enjoys playing with feather toys.</item>
+        <item>Shisha is a graceful and intelligent female cat. She has beautiful brown and white fur and sharp eyes. Shisha is independent and enjoys exploring her surroundings. She is also adept at solving puzzles and is fun to play with.</item>
+        <item>Oyen is a shy but friendly male cat. He takes a little time to adapt to new environments but then becomes a loyal and affectionate cat. Oyen enjoys sleeping on a comfortable sofa and appreciates gentle touches from his owner.</item>
+        <item>Rico is a very active cat who loves to play. He is always full of energy and enjoys running around the house. Rico is a fun companion to have and will make you smile with his cheerfulness every day.</item>
+        <item>Gembul is a chubby cat with thick and soft fur. He loves to eat and often falls asleep under the sunlight. Although he looks lazy, Gembul is a warm and friendly cat, always ready to be cuddled by his owner.</item>
+        <item>Monis is a cute and sociable cat. He has a friendly and fun-loving personality, enjoys sitting on his owner\'s lap while listening to stories. Monis is a loving cat and will brighten up your day.</item>
+        <item>Kanabawi is a cat with long and beautiful fur. He is an elegant and graceful cat, often seen walking with gentle steps. Kanabawi is a loyal friend and will always be by your side through thick and thin.</item>
+        <item>Aing Macan is a strong and brave cat. He is a cat who loves to explore the wilderness and has a sharp hunting instinct. Despite his wild side, Aing Macan is a loyal cat and will protect you in every way.</item>
+    </string-array>
+
+    <string-array name="recommended_category">
+        <item>Village Cat</item>
+        <item>Village Cat</item>
+        <item>Persian</item>
+        <item>Village Cat</item>
+        <item>Village Cat</item>
+        <item>Village Cat</item>
+        <item>Persian</item>
+        <item>British Shorthair</item>
+        <item>Village Cat</item>
+        <item>Munchkin</item>
+    </string-array>
+
+    <!-- all_miaw -->
+    <string-array name="all_miaw_name">
         <item>Whiskers</item>
         <item>Luna</item>
         <item>Simba</item>
@@ -113,7 +142,7 @@
         <item>Oliver</item>
     </string-array>
 
-    <string-array name="recommended_photo">
+    <string-array name="all_miaw_photo">
         <item>@drawable/cat_1_whiskers</item>
         <item>@drawable/cat_2_luna</item>
         <item>@drawable/cat_3_simba</item>
@@ -135,25 +164,69 @@
         <item>@drawable/cat_19_oliver</item>
     </string-array>
 
-    <string-array name="recommended_rating">
-        <item>4.2</item>
-        <item>4.4</item>
-        <item>4.3</item>
-        <item>4.1</item>
-        <item>4.5</item>
-        <item>4.0</item>
-        <item>4.3</item>
-        <item>4.2</item>
-        <item>4.4</item>
-        <item>4.1</item>
-        <item>4.5</item>
-        <item>4.2</item>
-        <item>4.3</item>
-        <item>4.4</item>
-        <item>4.1</item>
-        <item>4.5</item>
-        <item>4.2</item>
-        <item>4.3</item>
-        <item>4.4</item>
+    <string-array name="all_miaw_price">
+        <item>24.2</item>
+        <item>14.4</item>
+        <item>24.3</item>
+        <item>34.1</item>
+        <item>24.5</item>
+        <item>14.0</item>
+        <item>14.3</item>
+        <item>14.2</item>
+        <item>24.4</item>
+        <item>34.1</item>
+        <item>44.5</item>
+        <item>24.2</item>
+        <item>14.3</item>
+        <item>14.4</item>
+        <item>24.1</item>
+        <item>24.5</item>
+        <item>14.2</item>
+        <item>41.3</item>
+        <item>24.4</item>
+    </string-array>
+
+    <string-array name="all_miaw_desc">
+        <item>Whiskers is a playful and curious cat with long, elegant whiskers. He loves to explore every nook and cranny of the house and is always on the lookout for new adventures.</item>
+        <item>Luna is a beautiful and mysterious cat with deep, enchanting eyes. She is often found lounging in the moonlight, her sleek fur glowing softly in the night.</item>
+        <item>Simba is a majestic and regal cat with a mane of golden fur. He exudes confidence and strength, ruling over his domain with a benevolent paw.</item>
+        <item>Bella is a graceful and elegant cat with a luxurious coat of fur. She moves with the poise of a queen and demands attention with her captivating presence.</item>
+        <item>Milna is a gentle and affectionate cat with a heart of gold. She is always there to offer comfort and companionship, her purrs like soothing melodies.</item>
+        <item>Shadow is a mysterious and elusive cat with a dark, enigmatic aura. He moves silently through the shadows, his piercing gaze betraying his keen intelligence.</item>
+        <item>Ginger is a fiery and spirited cat with a coat of vibrant orange fur. She approaches life with boundless enthusiasm, her playful antics brightening even the dullest of days.</item>
+        <item>Oreo is a charming and playful cat with a distinctive black-and-white coat. He is full of energy and mischief, always ready to embark on a new adventure.</item>
+        <item>Cleo is a graceful and sophisticated cat with an air of elegance. She is the epitome of refinement, her every movement exuding grace and beauty.</item>
+        <item>Max is a loyal and dependable cat with a heart of gold. He is always there for his loved ones, offering unwavering support and companionship.</item>
+        <item>Nala is a playful and adventurous cat with a mischievous twinkle in her eye. She is always ready for fun and excitement, her boundless energy contagious to all around her.</item>
+        <item>Felix is a charming and charismatic cat with a personality that lights up the room. He is the life of the party, his playful antics bringing joy to everyone he meets.</item>
+        <item>Daisy is a sweet and gentle cat with a sunny disposition. She is always there to brighten your day, her affectionate purrs like a warm embrace.</item>
+        <item>Charlie is a friendly and sociable cat with a heart of gold. He is always ready to make new friends, his warm and welcoming nature drawing others to him like a magnet.</item>
+        <item>Socks is a playful and energetic cat with a penchant for mischief. He is always getting into trouble, but his boundless enthusiasm and charm make it hard to stay mad at him for long.</item>
+        <item>Tiger is a bold and fearless cat with a powerful presence. He is a natural leader, his strength and courage inspiring those around him.</item>
+        <item>Chloe is a graceful and elegant cat with a gentle soul. She moves with the grace of a dancer, her every movement a study in poise and refinement.</item>
+        <item>Boots is an adventurous and spirited cat with a love for exploration. He is always on the move, his curious nature driving him to seek out new experiences.</item>
+        <item>Oliver is a charming and lovable cat with a heart of gold. He is always there to offer comfort and companionship, his gentle purrs like a soothing melody.</item>
+    </string-array>
+
+    <string-array name="all_miaw_category">
+        <item>Village Cat</item>
+        <item>Village Cat</item>
+        <item>Persian</item>
+        <item>Village Cat</item>
+        <item>Village Cat</item>
+        <item>Village Cat</item>
+        <item>Village Cat</item>
+        <item>Village Cat</item>
+        <item>Village Cat</item>
+        <item>Village Cat</item>
+        <item>Village Cat</item>
+        <item>Persian</item>
+        <item>Village Cat</item>
+        <item>Village Cat</item>
+        <item>Village Cat</item>
+        <item>Persian</item>
+        <item>Village Cat</item>
+        <item>Village Cat</item>
+        <item>Persian</item>
     </string-array>
 </resources>

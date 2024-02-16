@@ -36,8 +36,21 @@
             <TextView
                 style="@style/TextContent.Label"
                 android:layout_marginStart="16dp"
-                android:text="@string/detail_category"
+                android:text="@string/detail_miaw"
                 android:textColor="@color/md_theme_onPrimary" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/btn_share"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="?android:selectableItemBackground"
+                android:src="@drawable/ic_share"
+                app:tint="@color/md_theme_onPrimary" />
         </LinearLayout>
 
         <ImageView
@@ -51,7 +64,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardView"
+            android:id="@+id/cv_photo"
             android:layout_width="300dp"
             android:layout_height="300dp"
             android:layout_marginTop="80dp"
@@ -65,33 +78,71 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="fitXY"
-                tools:src="@drawable/cat_1_village" />
+                tools:src="@drawable/cat_1_beluga" />
+
         </androidx.cardview.widget.CardView>
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="300dp"
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins_light"
-            android:lines="2"
-            android:text="@string/source"
-            android:textAlignment="center"
-            android:textSize="10sp"
-            android:layout_marginTop="6dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cardView"
-            tools:ignore="SmallSp" />
+            android:background="@drawable/bottom_cycle_style"
+            android:backgroundTint="@color/md_theme_onPrimary"
+            android:elevation="2dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="4dp"
+            app:layout_constraintEnd_toEndOf="@+id/cv_photo"
+            app:layout_constraintTop_toTopOf="@+id/cv_photo">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_dollar"
+                app:tint="@color/md_theme_gold" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/poppins_medium"
+                tools:text="@string/placeholder_rating"
+                android:textColor="@color/md_theme_gold"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/top_cycle_style"
+            android:backgroundTint="@color/md_theme_onPrimary"
+            android:elevation="2dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppins_medium"
+            android:lines="1"
+            android:textSize="16sp"
+            android:paddingEnd="16dp"
+            android:paddingStart="8dp"
+            android:paddingTop="8dp"
+            android:textColor="@color/md_theme_gold"
+            app:layout_constraintBottom_toBottomOf="@+id/cv_photo"
+            app:layout_constraintStart_toStartOf="@+id/cv_photo"
+            tools:text="@string/placeholder_name_category" />
 
         <TextView
             android:id="@+id/tv_name"
             style="@style/TextContent.Label"
             android:layout_marginTop="16dp"
             android:layout_marginStart="16dp"
-            tools:text="@string/placeholder_name_category"
+            tools:text="@string/placeholder_name"
             android:textSize="24sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
+            app:layout_constraintTop_toBottomOf="@+id/cv_photo" />
 
         <TextView
             android:id="@+id/tv_desc"
@@ -101,7 +152,7 @@
             android:layout_marginEnd="16dp"
             android:textSize="14sp"
             android:justificationMode="inter_word"
-            tools:text="@string/placeholder_desc_category"
+            tools:text="@string/placeholder_desc_cat"
             android:layout_marginTop="6dp"
             android:fontFamily="@font/poppins_light"
             app:layout_constraintEnd_toEndOf="parent"
@@ -109,10 +160,10 @@
             app:layout_constraintTop_toBottomOf="@+id/tv_name" />
 
         <Button
-            android:id="@+id/btn_share"
+            android:id="@+id/btn_buy"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:text="@string/share"
+            android:text="@string/buy_now"
             android:layout_marginTop="16dp"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"

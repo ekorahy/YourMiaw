@@ -11,7 +11,7 @@ import com.bumptech.glide.Glide
 import com.ekorahy.yourmiaw.R
 import com.ekorahy.yourmiaw.model.types.Types
 import com.ekorahy.yourmiaw.view.detail.category.DetailCategoryActivity
-import com.ekorahy.yourmiaw.view.detail.category.DetailCategoryActivity.Companion.DATA_CATEGORY
+import com.ekorahy.yourmiaw.view.detail.category.DetailCategoryActivity.Companion.EXTRA_DATA_CATEGORY
 
 class ListTypesAdapter(private val listTypes: ArrayList<Types>): RecyclerView.Adapter<ListTypesAdapter.ListViewHolder>() {
 
@@ -34,7 +34,7 @@ class ListTypesAdapter(private val listTypes: ArrayList<Types>): RecyclerView.Ad
                 desc
             )
             val intent = Intent(holder.itemView.context, DetailCategoryActivity::class.java)
-            intent.putExtra(DATA_CATEGORY, category)
+            intent.putExtra(EXTRA_DATA_CATEGORY, category)
             holder.itemView.context.startActivity(intent)
         }
     }

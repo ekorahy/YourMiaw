@@ -3,7 +3,6 @@ package com.ekorahy.yourmiaw.view.detail.category
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.ekorahy.yourmiaw.R
 import com.ekorahy.yourmiaw.databinding.ActivityDetailCategoryBinding
 import com.ekorahy.yourmiaw.model.types.Types
 
@@ -16,10 +15,10 @@ class DetailCategoryActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val category = if (Build.VERSION.SDK_INT >= 33) {
-            intent.getParcelableExtra(DATA_CATEGORY, Types::class.java)
+            intent.getParcelableExtra(EXTRA_DATA_CATEGORY, Types::class.java)
         } else {
             @Suppress("DEPRECATION")
-            intent.getParcelableExtra(DATA_CATEGORY)
+            intent.getParcelableExtra(EXTRA_DATA_CATEGORY)
         }
 
         if (category != null) {
@@ -30,6 +29,6 @@ class DetailCategoryActivity : AppCompatActivity() {
     }
 
     companion object {
-        const val DATA_CATEGORY = "data_category"
+        const val EXTRA_DATA_CATEGORY = "extra_data_category"
     }
 }

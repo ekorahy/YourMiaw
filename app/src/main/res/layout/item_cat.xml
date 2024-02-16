@@ -37,7 +37,7 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/cycle_style"
+            android:background="@drawable/bottom_cycle_style"
             android:backgroundTint="@color/md_theme_onPrimary"
             android:paddingStart="16dp"
             android:paddingEnd="8dp"
@@ -50,16 +50,15 @@
             <ImageView
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:src="@drawable/ic_rating"
+                android:src="@drawable/ic_dollar"
                 app:tint="@color/md_theme_gold" />
 
             <TextView
-                android:id="@+id/tv_rating"
+                android:id="@+id/tv_price"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="3dp"
-                android:layout_marginStart="2dp"
                 android:fontFamily="@font/poppins_medium"
                 android:textSize="16sp"
                 android:text="@string/placeholder_rating"

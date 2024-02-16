@@ -7,5 +7,7 @@ import kotlinx.parcelize.Parcelize
 data class Cat(
     val name: String,
     val photo: Int,
-    val rating: Double
+    val price: Double,
+    val category: String,
+    val desc: String
 ): Parcelable
