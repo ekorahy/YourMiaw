@@ -13,10 +13,12 @@ import com.ekorahy.yourmiaw.model.types.Types
 import com.ekorahy.yourmiaw.view.detail.category.DetailCategoryActivity
 import com.ekorahy.yourmiaw.view.detail.category.DetailCategoryActivity.Companion.EXTRA_DATA_CATEGORY
 
-class ListTypesAdapter(private val listTypes: ArrayList<Types>): RecyclerView.Adapter<ListTypesAdapter.ListViewHolder>() {
+class ListTypesAdapter(private val listTypes: ArrayList<Types>) :
+    RecyclerView.Adapter<ListTypesAdapter.ListViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListViewHolder {
-        val view: View = LayoutInflater.from(parent.context).inflate(R.layout.item_types, parent, false)
+        val view: View =
+            LayoutInflater.from(parent.context).inflate(R.layout.item_types, parent, false)
         return ListViewHolder(view)
     }
 
@@ -41,7 +43,7 @@ class ListTypesAdapter(private val listTypes: ArrayList<Types>): RecyclerView.Ad
 
     override fun getItemCount(): Int = listTypes.size
 
-    class ListViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
+    class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val ivPhoto: ImageView = itemView.findViewById(R.id.iv_photo)
         val tvName: TextView = itemView.findViewById(R.id.tv_name)
     }

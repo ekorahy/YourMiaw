@@ -237,4 +237,14 @@
         <item>Village Cat</item>
         <item>Persian</item>
     </string-array>
+
+    <!-- content description -->
+    <string name="cd_back_icon">back icon</string>
+    <string name="cd_dollar_icon">dollar icon</string>
+    <string name="cd_share_icon">share icon</string>
+    <string name="cd_cicle_image">cicle image</string>
+    <string name="cd_cat_photo">cat photo</string>
+    <string name="cd_banner_image">banner image</string>
+    <string name="cd_about_icon">about icon</string>
+    <string name="cd_logo_icon">logo icon</string>
 </resources>

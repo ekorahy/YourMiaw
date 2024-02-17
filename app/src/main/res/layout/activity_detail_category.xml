@@ -30,8 +30,10 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:background="?android:selectableItemBackground"
+                android:contentDescription="@string/cd_back_icon"
                 android:src="@drawable/ic_arrow_back"
-                app:tint="@color/md_theme_onPrimary" />
+                app:tint="@color/md_theme_onPrimary"
+                tools:ignore="TouchTargetSizeCheck" />
 
             <TextView
                 style="@style/TextContent.Label"
@@ -46,6 +48,7 @@
             android:layout_height="300dp"
             android:background="@drawable/bottom_cicle_style"
             android:backgroundTint="@color/md_theme_primary"
+            android:contentDescription="@string/cd_cicle_image"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -64,7 +67,9 @@
                 android:id="@+id/iv_photo"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:contentDescription="@string/cd_cat_photo"
                 android:scaleType="fitXY"
+                tools:ignore="ImageContrastCheck"
                 tools:src="@drawable/cat_1_village" />
         </androidx.cardview.widget.CardView>
 
@@ -72,54 +77,54 @@
             android:id="@+id/textView"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
             android:fontFamily="@font/poppins_light"
             android:lines="2"
             android:text="@string/source"
             android:textAlignment="center"
             android:textSize="10sp"
-            android:layout_marginTop="6dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cardView"
-            tools:ignore="SmallSp" />
+            tools:ignore="SmallSp,TextSizeCheck" />
 
         <TextView
             android:id="@+id/tv_name"
             style="@style/TextContent.Label"
-            android:layout_marginTop="16dp"
             android:layout_marginStart="16dp"
-            tools:text="@string/placeholder_name_category"
+            android:layout_marginTop="16dp"
             android:textSize="24sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:text="@string/placeholder_name_category" />
 
         <TextView
             android:id="@+id/tv_desc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:textSize="14sp"
-            android:justificationMode="inter_word"
-            tools:text="@string/placeholder_desc_category"
             android:layout_marginTop="6dp"
+            android:layout_marginEnd="16dp"
             android:fontFamily="@font/poppins_light"
+            android:justificationMode="inter_word"
+            android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_name"
+            tools:text="@string/placeholder_desc_category" />
 
         <Button
             android:id="@+id/action_share"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:text="@string/share"
-            android:layout_marginTop="16dp"
             android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
+            android:text="@string/share"
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_desc"/>
+            app:layout_constraintTop_toBottomOf="@+id/tv_desc" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>

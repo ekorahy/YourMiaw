@@ -32,8 +32,7 @@
             android:name=".view.detail.category.DetailCategoryActivity"
             android:exported="false" />
         <activity
-            android:name=".view.MainActivity"
+            android:name=".view.main.MainActivity"
             android:exported="false" />
     </application>
-
 </manifest>

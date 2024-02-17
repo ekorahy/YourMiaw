@@ -10,4 +10,4 @@ data class Cat(
     val price: Double,
     val category: String,
     val desc: String
-): Parcelable
+) : Parcelable

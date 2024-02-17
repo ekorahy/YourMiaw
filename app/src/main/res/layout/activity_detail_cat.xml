@@ -30,8 +30,10 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:background="?android:selectableItemBackground"
+                android:contentDescription="@string/cd_back_icon"
                 android:src="@drawable/ic_arrow_back"
-                app:tint="@color/md_theme_onPrimary" />
+                app:tint="@color/md_theme_onPrimary"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
             <TextView
                 style="@style/TextContent.Label"
@@ -49,8 +51,10 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:background="?android:selectableItemBackground"
+                android:contentDescription="@string/cd_share_icon"
                 android:src="@drawable/ic_share"
-                app:tint="@color/md_theme_onPrimary" />
+                app:tint="@color/md_theme_onPrimary"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
         </LinearLayout>
 
         <ImageView
@@ -59,6 +63,7 @@
             android:layout_height="300dp"
             android:background="@drawable/bottom_cicle_style"
             android:backgroundTint="@color/md_theme_primary"
+            android:contentDescription="@string/cd_cicle_image"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -77,6 +82,7 @@
                 android:id="@+id/iv_photo"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:contentDescription="@string/cd_cat_photo"
                 android:scaleType="fitXY"
                 tools:src="@drawable/cat_1_beluga" />
 
@@ -100,8 +106,10 @@
             <ImageView
                 android:layout_width="20dp"
                 android:layout_height="20dp"
+                android:contentDescription="@string/cd_dollar_icon"
                 android:src="@drawable/ic_dollar"
-                app:tint="@color/md_theme_gold" />
+                app:tint="@color/md_theme_gold"
+                tools:ignore="ImageContrastCheck" />
 
             <TextView
                 android:id="@+id/tv_price"
@@ -110,9 +118,10 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="3dp"
                 android:fontFamily="@font/poppins_medium"
-                tools:text="@string/placeholder_rating"
                 android:textColor="@color/md_theme_gold"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                tools:ignore="TextContrastCheck"
+                tools:text="@string/placeholder_rating" />
         </LinearLayout>
 
         <TextView
@@ -125,52 +134,53 @@
             android:ellipsize="end"
             android:fontFamily="@font/poppins_medium"
             android:lines="1"
-            android:textSize="16sp"
-            android:paddingEnd="16dp"
             android:paddingStart="8dp"
             android:paddingTop="8dp"
+            android:paddingEnd="16dp"
             android:textColor="@color/md_theme_gold"
+            android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="@+id/cv_photo"
             app:layout_constraintStart_toStartOf="@+id/cv_photo"
+            tools:ignore="TextContrastCheck"
             tools:text="@string/placeholder_name_category" />
 
         <TextView
             android:id="@+id/tv_name"
             style="@style/TextContent.Label"
-            android:layout_marginTop="16dp"
             android:layout_marginStart="16dp"
-            tools:text="@string/placeholder_name"
+            android:layout_marginTop="16dp"
             android:textSize="24sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cv_photo" />
+            app:layout_constraintTop_toBottomOf="@+id/cv_photo"
+            tools:text="@string/placeholder_name" />
 
         <TextView
             android:id="@+id/tv_desc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:textSize="14sp"
-            android:justificationMode="inter_word"
-            tools:text="@string/placeholder_desc_cat"
             android:layout_marginTop="6dp"
+            android:layout_marginEnd="16dp"
             android:fontFamily="@font/poppins_light"
+            android:justificationMode="inter_word"
+            android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_name"
+            tools:text="@string/placeholder_desc_cat" />
 
         <Button
             android:id="@+id/btn_buy"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:text="@string/buy_now"
-            android:layout_marginTop="16dp"
             android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
+            android:text="@string/buy_now"
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_desc"/>
+            app:layout_constraintTop_toBottomOf="@+id/tv_desc" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>

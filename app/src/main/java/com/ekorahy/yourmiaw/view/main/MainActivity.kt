@@ -1,4 +1,4 @@
-package com.ekorahy.yourmiaw.view
+package com.ekorahy.yourmiaw.view.main
 
 import android.annotation.SuppressLint
 import android.content.Intent

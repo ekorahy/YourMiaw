@@ -8,4 +8,4 @@ data class Types(
     val name: String,
     val photo: Int,
     val desc: String
-): Parcelable
+) : Parcelable

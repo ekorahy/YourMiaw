@@ -17,7 +17,8 @@ class ListAllMiawAdapter(private val listAllMiaw: ArrayList<Cat>) :
         parent: ViewGroup,
         viewType: Int
     ): ListViewHolder {
-        val view: View = LayoutInflater.from(parent.context).inflate(R.layout.item_cat, parent, false)
+        val view: View =
+            LayoutInflater.from(parent.context).inflate(R.layout.item_cat, parent, false)
         return ListViewHolder(view)
     }
 

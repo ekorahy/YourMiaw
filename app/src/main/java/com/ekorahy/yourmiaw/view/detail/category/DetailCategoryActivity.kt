@@ -35,7 +35,10 @@ class DetailCategoryActivity : AppCompatActivity() {
                     val shareIntent = Intent().apply {
                         action = Intent.ACTION_SEND
                         type = "text/plain"
-                        putExtra(Intent.EXTRA_TEXT, getString(R.string.share_content_category, category.name, category.desc))
+                        putExtra(
+                            Intent.EXTRA_TEXT,
+                            getString(R.string.share_content_category, category.name, category.desc)
+                        )
                     }
                     startActivity(Intent.createChooser(shareIntent, getString(R.string.share_via)))
                 }

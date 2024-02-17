@@ -5,7 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.ekorahy.yourmiaw.databinding.ActivitySplashScreenBinding
-import com.ekorahy.yourmiaw.view.MainActivity
+import com.ekorahy.yourmiaw.view.main.MainActivity
 
 @SuppressLint("CustomSplashScreen")
 class SplashScreenActivity : AppCompatActivity() {

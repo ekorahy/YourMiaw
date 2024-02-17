@@ -11,8 +11,8 @@
         android:id="@+id/ll_logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:gravity="center"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,6 +22,7 @@
         <ImageView
             android:layout_width="170dp"
             android:layout_height="170dp"
+            android:contentDescription="@string/cd_logo_icon"
             android:src="@drawable/logo" />
 
         <TextView
@@ -29,9 +30,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:fontFamily="@font/poppins_medium"
-            android:textSize="12sp"
+            android:text="@string/tagline_app"
             android:textColor="@color/md_theme_onPrimary"
-            android:text="@string/tagline_app" />
+            android:textSize="12sp" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
