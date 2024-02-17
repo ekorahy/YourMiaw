@@ -41,7 +41,7 @@ class DetailCatActivity : AppCompatActivity() {
                         Toast.LENGTH_SHORT
                     ).show()
                 }
-                btnShare.setOnClickListener {
+                actionShare.setOnClickListener {
                     val shareIntent = Intent().apply {
                         action = Intent.ACTION_SEND
                         type = "text/plain"

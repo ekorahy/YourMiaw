@@ -44,7 +44,7 @@
             android:id="@+id/imageView2"
             android:layout_width="match_parent"
             android:layout_height="300dp"
-            android:background="@drawable/bottom_cycle_style"
+            android:background="@drawable/bottom_cicle_style"
             android:backgroundTint="@color/md_theme_primary"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -109,7 +109,7 @@
             app:layout_constraintTop_toBottomOf="@+id/tv_name" />
 
         <Button
-            android:id="@+id/btn_share"
+            android:id="@+id/action_share"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:text="@string/share"

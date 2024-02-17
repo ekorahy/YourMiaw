@@ -37,7 +37,7 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/bottom_cycle_style"
+            android:background="@drawable/bottom_cicle_style"
             android:backgroundTint="@color/md_theme_onPrimary"
             android:paddingStart="16dp"
             android:paddingEnd="8dp"

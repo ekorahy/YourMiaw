@@ -31,7 +31,7 @@ class DetailCategoryActivity : AppCompatActivity() {
                 btnBack.setOnClickListener {
                     onBackPressedDispatcher.onBackPressed()
                 }
-                btnShare.setOnClickListener {
+                actionShare.setOnClickListener {
                     val shareIntent = Intent().apply {
                         action = Intent.ACTION_SEND
                         type = "text/plain"

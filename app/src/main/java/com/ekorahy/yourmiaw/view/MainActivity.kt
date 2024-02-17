@@ -14,7 +14,7 @@ import com.ekorahy.yourmiaw.adapter.ListRecommendedAdapter
 import com.ekorahy.yourmiaw.adapter.ListAllMiawAdapter
 import com.ekorahy.yourmiaw.adapter.ListTypesAdapter
 import com.ekorahy.yourmiaw.databinding.ActivityMainBinding
-import com.ekorahy.yourmiaw.view.detail.about.AboutActivity
+import com.ekorahy.yourmiaw.view.about.AboutActivity
 
 class MainActivity : AppCompatActivity() {
 

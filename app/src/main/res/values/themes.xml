@@ -64,5 +64,10 @@
         <item name="android:textSize">16sp</item>
     </style>
 
+    <style name="circleImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
     <style name="Theme.YourMiaw" parent="Base.Theme.YourMiaw" />
 </resources>
