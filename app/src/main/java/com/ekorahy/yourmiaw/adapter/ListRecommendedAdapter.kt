@@ -2,13 +2,10 @@ package com.ekorahy.yourmiaw.adapter
 
 import android.content.Intent
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.ekorahy.yourmiaw.model.cat.Cat
-import com.ekorahy.yourmiaw.R
+import com.ekorahy.yourmiaw.databinding.ItemCatBinding
 import com.ekorahy.yourmiaw.view.detail.cat.DetailCatActivity
 import com.ekorahy.yourmiaw.view.detail.cat.DetailCatActivity.Companion.EXTRA_DATA_CAT
 
@@ -18,16 +15,15 @@ class ListRecommendedAdapter(private val listRecommended: ArrayList<Cat>) :
         parent: ViewGroup,
         viewType: Int
     ): ListViewHolder {
-        val view: View =
-            LayoutInflater.from(parent.context).inflate(R.layout.item_cat, parent, false)
-        return ListViewHolder(view)
+        val binding = ItemCatBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        return ListViewHolder(binding)
     }
 
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
         val (name, photo, price, category, desc) = listRecommended[position]
-        holder.tvName.text = name
-        holder.ivPhoto.setImageResource(photo)
-        holder.tvPrice.text = price.toString()
+        holder.binding.tvName.text = name
+        holder.binding.ivPhoto.setImageResource(photo)
+        holder.binding.tvPrice.text = price.toString()
         holder.itemView.setOnClickListener {
             val cat = Cat(
                 name,
@@ -44,9 +40,5 @@ class ListRecommendedAdapter(private val listRecommended: ArrayList<Cat>) :
 
     override fun getItemCount(): Int = listRecommended.size
 
-    class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val ivPhoto: ImageView = itemView.findViewById(R.id.iv_photo)
-        val tvName: TextView = itemView.findViewById(R.id.tv_name)
-        val tvPrice: TextView = itemView.findViewById(R.id.tv_price)
-    }
+    class ListViewHolder(var binding: ItemCatBinding) : RecyclerView.ViewHolder(binding.root)
 }
